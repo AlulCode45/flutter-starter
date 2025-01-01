@@ -93,15 +93,58 @@ The project structure is designed to be clean and scalable:
 
 ```
 starter_pack/
-├── assets/                 # Images, icons, and other static assets
-├── fonts/                  # Custom fonts
-├── lib/
-│   ├── models/             # Hive data models
-│   ├── providers/          # Riverpod providers
-│   ├── screens/            # UI screens
-│   ├── widgets/            # Reusable widgets
-│   ├── main.dart           # Entry point of the application
-├── pubspec.yaml            # Project dependencies and configurations
+|   analysis_options.yaml
+|   pubspec.yaml   
++---assets
+|   +---icons
+|   \---images
+|           profile.jpeg
+|           profile.jpg
+|           
++---fonts
+|       Poppins-Black.ttf
+|       Poppins-BlackItalic.ttf
+|       Poppins-Bold.ttf
+|       Poppins-BoldItalic.ttf
+|       Poppins-ExtraBold.ttf
+|       Poppins-ExtraBoldItalic.ttf
+|       Poppins-ExtraLight.ttf
+|       Poppins-ExtraLightItalic.ttf
+|       Poppins-Italic.ttf
+|       Poppins-Light.ttf
+|       Poppins-LightItalic.ttf
+|       Poppins-Medium.ttf
+|       Poppins-MediumItalic.ttf
+|       Poppins-Regular.ttf
+|       Poppins-SemiBold.ttf
+|       Poppins-SemiBoldItalic.ttf
+|       Poppins-Thin.ttf
+|       Poppins-ThinItalic.ttf
+|                  
++---lib
+|   |   firebase_options.dart
+|   |   main.dart
+|   |   
+|   +---components
+|   |       appBarComponent.dart
+|   |       drawerComponent.dart
+|   |       
+|   +---domains
+|   |   +---models
+|   |   |       articleModel.dart
+|   |   |       
+|   |   +---providers
+|   |   |       articleProvider.dart
+|   |   |       
+|   |   +---repository
+|   |   |       articleRepository.dart
+|   |   |       
+|   |   \---services
+|   |           databaseService.dart
+|   |           
+|   \---screens
+|           home.dart
+
 ```
 
 ---
